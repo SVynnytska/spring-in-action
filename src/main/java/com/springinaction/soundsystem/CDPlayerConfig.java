@@ -1,7 +1,6 @@
 package com.springinaction.soundsystem;
 
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
@@ -16,6 +15,8 @@ public class CDPlayerConfig {
 
     @Bean
     public MediaPlayer cdPlayer(CompactDisc compactDisc) {
-        return new CDPlayer(compactDisc);
+        CDPlayer cdPlayer = new CDPlayer();
+        cdPlayer.setCompactDisc(compactDisc);
+        return cdPlayer;
     }
 }

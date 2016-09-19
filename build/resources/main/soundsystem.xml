@@ -24,4 +24,7 @@ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
           class="com.springinaction.soundsystem.CDPlayer">
         <property name="compactDisc" ref="compactDisc" />
     </bean>
+
+    <!--<bean id="reallyBlankDisc"-->
+          <!--class="com.springinaction.soundsystem.BlankDisc" />-->
 </beans>
