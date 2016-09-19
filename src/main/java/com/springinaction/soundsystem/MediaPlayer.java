@@ -1,6 +1,5 @@
 package com.springinaction.soundsystem;
 
-
-public interface CompactDisc {
+public interface MediaPlayer {
     void play();
 }
