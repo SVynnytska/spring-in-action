@@ -1,0 +1,20 @@
+group 'springinaction'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile group: 'org.springframework', name: 'spring-context', version: '4.3.1.RELEASE'
+    compile group: 'org.mockito', name: 'mockito-all', version: '1.10.19'
+    compile group: 'org.aspectj', name: 'aspectjweaver', version: '1.8.9'
+    compile group: 'org.springframework', name: 'spring-aop', version: '4.3.1.RELEASE'
+    compile group: 'org.springframework', name: 'spring-core', version: '4.3.1.RELEASE'
+    compile group: 'org.springframework', name: 'spring-beans', version: '4.3.1.RELEASE'
+    compile group: 'org.springframework', name: 'spring-jdbc', version: '4.3.1.RELEASE'
+}
