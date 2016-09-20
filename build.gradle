@@ -14,10 +14,13 @@ dependencies {
     compile group: 'org.mockito', name: 'mockito-all', version: '1.10.19'
     compile group: 'org.aspectj', name: 'aspectjweaver', version: '1.8.9'
     compile group: 'org.springframework', name: 'spring-aop', version: '4.3.1.RELEASE'
+    compile group: 'org.springframework', name: 'spring-web', version: '4.3.1.RELEASE'
     compile group: 'org.springframework', name: 'spring-core', version: '4.3.1.RELEASE'
     compile group: 'org.springframework', name: 'spring-beans', version: '4.3.1.RELEASE'
     compile group: 'org.springframework', name: 'spring-jdbc', version: '4.3.1.RELEASE'
     compile group: 'org.springframework', name: 'spring-test', version: '4.3.1.RELEASE'
     compile group: 'com.github.stefanbirkner', name: 'system-rules', version: '1.16.0'
+    compile group: 'commons-dbcp', name: 'commons-dbcp', version: '1.4'
+
 
 }

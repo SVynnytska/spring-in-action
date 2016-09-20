@@ -12,7 +12,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration("/soundsystem.xml")
+@ContextConfiguration(classes = CDPlayerConfig.class)
 public class CDPlayerTest {
     @Rule
     public final StandardOutputStreamLog log =
@@ -21,20 +21,23 @@ public class CDPlayerTest {
     private MediaPlayer player;
     @Autowired
     private CompactDisc cd;
+
+
     @Test
     public void cdShouldNotBeNull() {
         assertNotNull(cd);
     }
+
     @Test
     public void play() {
         player.play();
         assertEquals(
-              "Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles\r\n" +
-                      "-Track: Sgt. Pepper's Lonely Hearts Club Band\r\n" +
-                      "-Track: With a Little Help from My Friends\r\n" +
-                      "-Track: Lucy in the Sky with Diamonds\r\n" +
-                      "-Track: Getting Better\r\n" +
-                      "-Track: Fixing a Hole\r\n",
+                "Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles\r\n"
+                        + "-Track: Sgt. Pepper's Lonely Hearts Club Band\r\n" +
+                        "-Track: With a Little Help from My Friends\r\n" +
+                        "-Track: Lucy in the Sky with Diamonds\r\n" +
+                        "-Track: Getting Better\r\n" +
+                        "-Track: Fixing a Hole\r\n",
                 log.getLog());
     }
 }
