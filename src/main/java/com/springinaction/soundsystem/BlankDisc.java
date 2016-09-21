@@ -13,6 +13,9 @@ public class BlankDisc implements CompactDisc {
     private String artist;
     private List<String> tracks;
 
+    public BlankDisc() {
+    }
+
     public BlankDisc(
             @Value("${disc.title}") String title,
             @Value("${disc.artist}") String artist) {
@@ -42,5 +45,10 @@ public class BlankDisc implements CompactDisc {
         for (String track : tracks) {
             System.out.println("-Track: " + track);
         }
+    }
+
+    @Override
+    public void playTrack(int i) {
+        System.out.println(tracks.get(i));
     }
 }

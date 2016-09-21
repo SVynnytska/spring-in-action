@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="compactDisc" class="com.springinaction.soundsystem.BlankDisc">
+        <property name="title"
+                  value="Sgt. Pepper's Lonely Hearts Club Band" />
+        <property name="artist" value="The Beatles" />
+        <property name="tracks">
+            <list>
+                <value>Sgt. Pepper's Lonely Hearts Club Band</value>
+                <value>With a Little Help from My Friends</value>
+                <value>Lucy in the Sky with Diamonds</value>
+                <value>Getting Better</value>
+                <value>Fixing a Hole</value>
+                <!-- ...other tracks omitted for brevity... -->
+            </list>
+        </property>
+    </bean>
+    <bean id="cdPlayer"
+          class="com.springinaction.soundsystem.CDPlayer">
+        <property name="compactDisc" ref="compactDisc" />
+    </bean>
+</beans>

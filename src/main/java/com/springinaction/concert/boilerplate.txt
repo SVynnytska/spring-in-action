@@ -1,0 +1,10 @@
+execution(* concert.Performance.perform(..))
+
+When the method is called from within any class in the concert package
+execution(* concert.Performance.perform(..))&& within(concert.*))
+
+limited to the bean whose ID is woodstock.
+execution(* concert.Performance.perform())and bean('woodstock')
+
+all beans whose ID isn’t woodstock
+execution(* concert.Performance.perform())and !bean('woodstock')
