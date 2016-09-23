@@ -4,8 +4,6 @@
     <data-source name="MySQL - spring-in-action@localhost" uuid="a011cb8e-f46d-4b2a-babd-d00748da8945">
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
-      <introspection-scope>spring-in-action:</introspection-scope>
-      <resolve-scope>spring-in-action:</resolve-scope>
     </data-source>
   </component>
 </project>

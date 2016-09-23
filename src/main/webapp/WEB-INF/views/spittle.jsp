@@ -1,32 +1,17 @@
-
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
-<head>
-    <title>Title</title>
-</head>
-<body>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Spitter</title>
     <link rel="stylesheet"
           type="text/css"
-          th:href="@{/resources/style.css}"></link>
+          href="<c:url value="/resources/style.css" />" >
 </head>
 <body>
-<div id="header" th:include="page :: header"></div>
-
-<div id="content">
-    <div class="spittleView">
-        <div class="spittleMessage" th:text="#{spittle.message}">Spittle message</div>
-        <div>
-            <span class="spittleTime" th:text="#{spittle.time}">spittle timestamp</span>
-        </div>
+<div class="spittleView">
+    <div class="spittleMessage"><c:out value="${spittle.message}" /></div>
+    <div>
+        <span class="spittleTime"><c:out value="${spittle.time}" /></span>
     </div>
 </div>
-<div id="footer" th:include="page :: copy"></div>
-
-</body>
-</html>
 </body>
 </html>
