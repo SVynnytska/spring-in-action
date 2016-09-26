@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-web-flow/spring-web-flow.iml" filepath="$PROJECT_DIR$/spring-web-flow/spring-web-flow.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/springinaction.iml" filepath="$PROJECT_DIR$/.idea/modules/springinaction.iml" />
     </modules>
   </component>

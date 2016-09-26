@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Gradle : springinaction:spring-web-flow : spring-web-flow-1.0-SNAPSHOT.war">
+    <output-path>$PROJECT_DIR$/out/artifacts/spring-web-flow</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$" />
+    </properties>
+    <root id="archive" name="spring-web-flow-1.0-SNAPSHOT.war">
+      <element id="javaee-facet-resources" facet="spring-web-flow/web/Web Gradle : spring-web-flow-1.0-SNAPSHOT.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="spring-web-flow" />
+          <element id="dir-copy" path="$PROJECT_DIR$/spring-web-flow/build/resources/main" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/spring-web-flow/exploded/spring-web-flow-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
