@@ -9,7 +9,7 @@
         href="<c:url value="/resources/style.css" />" >
 </head>
 <body>
-<h1><s:message code="spittr.welcome" /></h1>
+<h1>spittr welcome</h1>
 <a href="<c:url value="/spittles" />">Spittles</a> |
 <a href="<c:url value="/spitter/register" />">Register</a>
 </body>
